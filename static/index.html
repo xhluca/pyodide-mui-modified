@@ -20,7 +20,7 @@
                 indexURL: "https://cdn.jsdelivr.net/pyodide/v0.18.0/full/"
             });
 
-            const script = await fetch("/material-ui-in-pyodide/main.py");
+            const script = await fetch("/static/main.py");
             const scriptText = await script.text();
             pyodide.runPython(scriptText);
         }
